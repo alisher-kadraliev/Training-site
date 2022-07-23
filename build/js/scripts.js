@@ -1,3 +1,4 @@
+// Custom Scripts
 // Custom scripts
 // Мобильное меню бургер
 function burgerMenu() {
@@ -161,6 +162,7 @@ const select = new Select('#select', {
         input.value = item.value
     }
 })
+
 
 
 

@@ -1,0 +1,172 @@
+.section {
+
+    // .section__hero
+
+    &__hero {}
+}
+
+.header__wrapper {
+    height: 100vh;
+    width: 100%;
+    background: #001731;
+    position: relative;
+
+    .hero__img {
+        position: absolute;
+        bottom: 0;
+        max-width: 650px;
+        right: 0px;
+
+        @media(max-width: $breakpoint1200) {
+            max-width: 550px;
+            right: -20px;
+        }
+
+        @media(max-width: $breakpoint992) {
+            max-width: 470px;
+            right: 0;
+        }
+
+        @media(max-width: $breakpoint768) {
+            max-width: 320px;
+        }
+    }
+}
+
+.hero {
+
+    // .hero__gradient
+
+    &__gradient {}
+
+    // .hero__title
+
+    &__title {
+        padding-top: 106px;
+        max-width: 715px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 95%;
+        /* or 68px */
+
+        letter-spacing: -0.03em;
+
+        /* white */
+
+        color: #FFFFFF;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 58px;
+            padding-top: 60px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 46px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        @media(max-width: $breakpoint480) {
+        font-size: 36px;
+        }
+    }
+
+    // .hero__btns
+
+    &__btns {
+        padding-top: 34px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+
+        @media(max-width: $breakpoint768) {
+            flex-direction: column;
+            gap: 7px;
+            padding-top: 25px;
+
+        }
+    }
+
+    // .hero__btn
+
+    &__btn {
+        @media(max-width: $breakpoint768) {
+            width: 80%;
+        }
+    }
+
+    // .hero__btn-secondary
+
+    &__btn-secondary {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+        padding: 15px 22px;
+        /* white */
+        background: #398BFF;
+        border: 3px solid rgba(44, 130, 253, 0.2);
+        border-radius: 4px;
+        color: #FFFFFF;
+    }
+
+    // .hero__subtext
+
+    &__subtext {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145%;
+        /* identical to box height, or 29px */
+
+
+        color: rgba(255, 255, 255, 0.35);
+    }
+
+    // .hero__btn-primary
+
+    &__btn-primary {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        background: rgba(44, 130, 253, 0.15);
+        border-radius: 4px;
+        letter-spacing: 0.01em;
+        padding: 15px 22px;
+        /* primary-blue */
+
+        color: #398BFF;
+    }
+
+    // .hero__text
+
+    &__text {
+        max-width: 500px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 145%;
+        /* or 32px */
+        padding-top: 36px;
+
+        color: #AAC0E0;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 18px;
+            max-width: 400px;
+            padding-top: 24px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.container {}
