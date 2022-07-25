@@ -2,7 +2,6 @@
 
     // .section__hero
 
-    &__hero {}
 }
 
 .header__wrapper {
@@ -10,6 +9,7 @@
     width: 100%;
     background: #001731;
     position: relative;
+    z-index: -1;
 
     .hero__img {
         position: absolute;
@@ -66,8 +66,9 @@
             padding-top: 40px;
             text-align: center;
         }
+
         @media(max-width: $breakpoint480) {
-        font-size: 36px;
+            font-size: 36px;
         }
     }
 
@@ -111,6 +112,11 @@
         border: 3px solid rgba(44, 130, 253, 0.2);
         border-radius: 4px;
         color: #FFFFFF;
+
+        &:hover {
+            background: #256fd6;
+            transition: .3s ease;
+        }
     }
 
     // .hero__subtext
@@ -141,6 +147,12 @@
         /* primary-blue */
 
         color: #398BFF;
+
+        &:hover {
+            color: #fff;
+            background: #398BFF;
+            transition: .3s ease;
+        }
     }
 
     // .hero__text

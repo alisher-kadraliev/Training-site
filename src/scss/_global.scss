@@ -42,3 +42,39 @@ body {
         opacity: 1;
     }
 }
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 110%;
+    /* or 46px */
+
+    letter-spacing: -0.03em;
+
+    /* dark-blue */
+
+    color: $primary;
+}
+
+.btn {
+    padding: 15px 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* white */
+
+    color: #FFFFFF;
+    background: #398BFF;
+    border-radius: 4px;
+
+    &:hover {
+        background: #256fd6;
+        transition: .3s ease;
+    }
+}
