@@ -179,6 +179,25 @@ function accordion() {
         })
     })
 }
-accordion() 
+accordion()
 
 
+//switcher
+function togglePrice() {
+    const switcher = document.querySelector(".switcher")
+    const billingItems = document.querySelectorAll(".billing__item")
+
+    switcher.addEventListener("click", () => {
+        switcher.classList.toggle("active")
+
+        if (!switcher.classList.contains("active")) {
+            billingItems[0].classList.add("active")
+            billingItems[2].classList.remove("active")
+        } else {
+            billingItems[0].classList.remove("active")
+            billingItems[2].classList.add("active")
+        }
+    })
+}
+
+togglePrice()
