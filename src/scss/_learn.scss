@@ -1,0 +1,103 @@
+.section {
+
+    // .section__learn
+
+    &__learn {
+        padding-top: 74px;
+        background: #031E3E;
+        @media(max-width: $breakpoint768) {
+        padding-top: 0px;
+        }
+    }
+}
+
+.container {}
+
+.learn {
+    display: flex;
+    gap: 112px;
+    align-items: center;
+    justify-content: space-between;
+
+    // .learn__item
+    @media(max-width: $breakpoint1200) {
+        gap: 30px;
+    }
+
+    @media(max-width: $breakpoint768) {
+        flex-wrap: wrap-reverse;
+
+    }
+
+
+    // .learn__img
+
+    &__img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    // .learn__img-icon
+
+    &__img-icon {
+        padding-bottom: 24px;
+    }
+
+    // .learn__title
+
+    &__title {
+        padding-bottom: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+
+        color: #FFFFFF;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 31px;
+        }
+    }
+
+    // .learn__text
+
+    &__text {
+        padding-bottom: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145%;
+        /* or 29px */
+
+
+        color: #AAC0E0;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+            padding-bottom: 25px;
+        }
+    }
+
+    // .learn__btn
+
+    &__btn {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+
+        color: #FFFFFF;
+    }
+}
+
+.btn {}
+
