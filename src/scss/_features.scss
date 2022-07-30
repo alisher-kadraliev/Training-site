@@ -4,6 +4,9 @@
         box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
         border-radius: 6px;
         margin-bottom: 14px;
+        &.question__item-accord{
+            box-shadow: none;
+        }
 
         &.accordion__item-active {
 

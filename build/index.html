@@ -12,16 +12,16 @@
 <body class="main__body">
     <!-- Header -->
     <div class="header__wrapper">
-        <header>
+        <header id="home">
     <!-- Navbar -->
     <nav>
         <div class="navbar">
-            <div class="logo"> <a href="#"> <img src="./img/logo.svg" alt=""> </a> </div>
+            <div class="logo"> <a href="#home"> <img src="./img/logo.svg" alt=""> </a> </div>
             <ul class="menu">
-                <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>How it works</a></li>
+                <li class="menu__item"><a href="#story" class="menu__item-link" data-scroll>How it works</a></li>
                 <li class="menu__item"><a href="#Price" class="menu__item-link" data-scroll>Pricing</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About Us</a></li>
-                <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>FAQ</a></li>
+                <li class="menu__item"><a href="#reviews" class="menu__item-link" data-scroll>About Us</a></li>
+                <li class="menu__item"><a href="#question" class="menu__item-link" data-scroll>FAQ</a></li>
             </ul>
             <div class="nav__lang">
                 <!-- Select -->
@@ -61,13 +61,32 @@
     </div>
     <!-- Main Page -->
     <main>
-                <section class="section__story">
+                <section class="section__story" id="story">
     <div class="container">
         <div class="story">
             <div class="story__item item__left">
                 <div class="story__image">
                     <img src="./img/story.jpg" alt="" class="story__img">
-                   <a href="#"><img src="./img/play.svg" alt="" class="story__play"></a> 
+
+
+
+                    <!-- Modal -->
+                    <div class="modal__wrapper">
+                        <div class="modal">
+                            <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px"
+                                    height="10px"></div>
+                            <div class="modal__title"><span>
+                                    <iframe src="https://youtu.be/YgNhCOIbKoY" width="100%" height="300" style="border:none;">
+                                    </iframe>
+                                </span> </div>
+                            <div class="modal__body">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn modal__btn"><img src="./img/play.svg" alt="" class="story__play"></a>
+
+
+
                 </div>
             </div>
             <div class="story__item item__right">
@@ -348,18 +367,18 @@
         </div>
     </div>
 </section>
-                <section class="section__reviews">
+                <section class="section__reviews" id="reviews">
     <div class="container">
         <div class="reviews">
-            <div class=" left__item">
+            <div class="left">
                 <h1 class="reviews__title title">Reviews</h1>
                 <a href="#" class="reviews__link">Show All</a>
             </div>
-            <div class="right__item">
+            <div class="right">
                 <div class="reviews__items">
                     <div class="reviews__item">
                         <div class="reviews__chapter1">
-                            <img src="./img/reviews1.jpg" alt="" class="reviews__img">
+                            <img src="./img/reviews1.jpg"  alt="" class="reviews__img">
                             <div class="reviews__list">
                                 <h3 class="reviews__name">Arlene Mccoy</h3>
                                 <div class="reviews__special">BrPC founder, RIO Elite coach</div>
@@ -401,7 +420,7 @@
                                 <div class="reviews__special">Mid-High Stakes player</div>
                             </div>
                         </div>
-                        <p class="reviews__text">I used to solve with PioSolver and have
+                        <p class="reviews__text center">I used to solve with PioSolver and have
                         tested some other sites, but the interface,
                         simplicity, accuracy, and effectiveness of
                         GTO Wizard is by far the best.</p>
@@ -412,11 +431,217 @@
         </div>
     </div>
 </section>
+                <section class="section__question" id="question">
+    <div class="container">
+        <div class="question">
+            <div class="question__item">
+                <img src="./img/question.svg" alt="">
+                <h1 class="title question__title">Frequently asked questions</h1>
+            </div>
+            <div class="question__item">
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class=" question__text">For which formats do you have solutions?</div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">I play with different rake structure or use different bet
+                                sizings. Will PLO5 Trainer work for me?</div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">Do I need a powerful PC or any solver knowledge?
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">How does the solver manage balanced actions ?
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">When will be post-flop available?
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">Can I request my own sims to be added?
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">Can I export sims?
+
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">Can I use it on my phone?
+
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item question__item-accord">
+                        <div class="accordion__item-trigger question__accord">
+                            <div class="question__text">I have a question, how can I contact you?
+
+                            </div>
+                            <div class="trigger__img plus">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                                eleifend tristique scelerisque eget.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="contact-me">If you have any further questions please <a href="#"  class="quest-link">contact us</a> </p>
+        </div>
+    </div>
+</section>
 
     </main>
 
     <!-- Footer -->
-    
+    <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__item footer__top">
+                <div class="footer__limp">
+                    <ul class="footer__list">Company
+                        <li class=" footer__items"><a href="#" class="footer__link">Main</a></li>
+                        <li class=" footer__items"><a href="#" class="footer__link">How it works</a></li>
+                        <li class=" footer__items"><a href="#" class="footer__link">Pricing</a></li>
+                        <li class=" footer__items"><a href="#" class="footer__link">FAQ</a></li>
+                    </ul>
+                    <ul class="footer__list">Legal
+                        <li class=" footer__items"><a href="#" class="footer__link">Claim</a></li>
+                        <li class=" footer__items"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class=" footer__items"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                    <ul class="footer__list">Support
+                        <li class="footer__items"><a href="#" class="footer__link">Pricing</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Documentation</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">Guides</a></li>
+                        <li class="footer__items"><a href="#" class="footer__link">API Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer__left">
+                    <h3 class="footer__title">Subscribe to our newsletter!</h3>
+                    <div class="footer__text">The latest news, articles, and resources, sent to your inbox weekly.</div>
+                    <form action="" class="footer__form">
+                        <input type="email" class="footer__input" placeholder="Your Email">
+                        <button class="btn footer__btn">Learn more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__item footer__bottom">
+                <p class="footer__reserve">© 2022 All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><img src="./img/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social-link inst"><img src="./img/inst.svg" alt="">
+
+                    </a>
+                    <a href="#" class="footer__social-link"><img src="./img/twitter.svg" alt="">
+
+                    </a>
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.51 20 20 15.52 20 10C20 4.48 15.51 0 10 0ZM16.605 4.61C17.8357 6.10931 18.5167 7.98437 18.535 9.924C18.254 9.87 15.434 9.295 12.592 9.653C12.527 9.512 12.472 9.36 12.408 9.208C12.231 8.79105 12.043 8.3789 11.844 7.972C14.989 6.692 16.421 4.848 16.605 4.61ZM10 1.475C12.17 1.475 14.154 2.288 15.662 3.623C15.51 3.839 14.219 5.564 11.182 6.703C9.783 4.133 8.232 2.028 7.993 1.703C8.65086 1.54922 9.32441 1.4727 10 1.475ZM6.367 2.278C7.51144 3.86431 8.56867 5.51175 9.534 7.213C5.542 8.276 2.017 8.253 1.638 8.253C1.91283 6.96013 2.48261 5.74822 3.3029 4.71179C4.12319 3.67537 5.17182 2.84245 6.367 2.278ZM1.453 10.01V9.75C1.823 9.76 5.965 9.815 10.228 8.535C10.478 9.012 10.705 9.5 10.922 9.988C10.813 10.021 10.694 10.053 10.586 10.086C6.182 11.506 3.839 15.389 3.644 15.715C2.23384 14.1495 1.45264 12.117 1.453 10.01ZM10 18.547C8.10143 18.5502 6.25667 17.9164 4.761 16.747C4.913 16.432 6.649 13.091 11.464 11.41C11.486 11.4 11.497 11.4 11.518 11.388C12.3303 13.4834 12.9407 15.6516 13.341 17.863C12.2858 18.317 11.1487 18.5498 10 18.547ZM14.761 17.082C14.675 16.562 14.219 14.067 13.102 10.998C15.781 10.575 18.124 11.269 18.416 11.367C18.2336 12.5201 17.8148 13.623 17.1858 14.6065C16.5568 15.59 15.7313 16.4328 14.761 17.082Z"
+                                fill="#9CA3AF" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 
