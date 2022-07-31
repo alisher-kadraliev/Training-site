@@ -3,6 +3,15 @@
 
 
 // Navbar
+.fixed__nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #001731;
+    z-index:111111;
+}
+
 nav {}
 
 .navbar {
@@ -122,7 +131,7 @@ nav {}
 
     // .menu__item-link
     &__item-link {
-        
+
         font-style: normal;
         font-weight: 600;
         font-size: 17px;
@@ -256,11 +265,13 @@ $height: 46px;
     @media(max-width: $breakpoint992) {
         left: 300px;
     }
+
     @media(max-width: $breakpoint768) {
-    left: 150px;
+        left: 150px;
     }
+
     @media(max-width: $breakpoint480) {
-    left: 70px;
+        left: 70px;
     }
 
 
@@ -304,7 +315,7 @@ $height: 46px;
 
         .select__arrow {
             pointer-events: none;
-            color: #fff;
+            color: rgb(67, 0, 73);
 
             &.open {
                 transform: rotate(180deg);
@@ -329,17 +340,17 @@ $height: 46px;
 
         .select__list {
             .select__item {
-                color: #fff;
-                padding-top: 10px;
+                color: rgb(255, 0, 0);
+                padding-top: 20px;
                 padding-left: 48px;
                 cursor: pointer;
 
                 &.selected {
-                    color: #fff;
+                    color: rgb(0, 241, 40);
                 }
 
                 &:hover {
-                    color: #fff;
+                    color: rgb(208, 255, 0);
                     transition: .15 background-color ease-in;
                 }
             }

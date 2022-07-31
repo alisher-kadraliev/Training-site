@@ -133,6 +133,15 @@ body.locked {
   transition: 0.3s ease;
 }
 
+.fixed__nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #001731;
+  z-index: 111111;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,7 +304,7 @@ body.locked {
 
 .select__input .select__arrow {
   pointer-events: none;
-  color: #fff;
+  color: #430049;
   width: 15px;
 }
 
@@ -320,18 +329,18 @@ body.locked {
 }
 
 .select__dropdown .select__list .select__item {
-  color: #fff;
-  padding-top: 10px;
+  color: red;
+  padding-top: 20px;
   padding-left: 48px;
   cursor: pointer;
 }
 
 .select__dropdown .select__list .select__item.selected {
-  color: #fff;
+  color: #00f128;
 }
 
 .select__dropdown .select__list .select__item:hover {
-  color: #fff;
+  color: #d0ff00;
   -webkit-transition: 0.15 background-color ease-in;
   -o-transition: 0.15 background-color ease-in;
   transition: 0.15 background-color ease-in;
@@ -530,8 +539,8 @@ body.locked {
   background: white;
   padding: 25px;
   border-radius: 5px;
-  height: 350px;
-  width: 300px;
+  height: 550px;
+  width: 780px;
 }
 
 .modal__wrapper .modal__title {
@@ -563,6 +572,10 @@ body.locked {
   height: 50px;
   width: 150px;
   cursor: pointer;
+}
+
+.modal__btn.hidden {
+  border: none;
 }
 
 .accordion .accordion__item {
@@ -1922,6 +1935,16 @@ footer {
             flex: 0 0 100%;
   }
 
+  .modal__wrapper .modal {
+    height: 400px;
+    width: 450px;
+  }
+
+  .modal-story {
+    height: 300px;
+    width: 400px;
+  }
+
   .section__price {
     padding-bottom: 50px;
   }
@@ -2001,6 +2024,16 @@ footer {
 
   .hero__title {
     font-size: 36px;
+  }
+
+  .modal__wrapper .modal {
+    height: 300px;
+    width: 350px;
+  }
+
+  .modal-story {
+    height: 250px;
+    width: 300px;
   }
 
   .features__info {
